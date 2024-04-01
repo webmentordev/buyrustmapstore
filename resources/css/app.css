@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h1, h2, h3, .span{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.map{
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.map h1, .map h2, .map h3{
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.map img{
+    @apply w-full;
+}
+
+.featured h1{
+    @apply mb-1 text-3xl;
+}
+
+.featured h2{
+    @apply mb-1 text-xl;
+}
+
+.featured p{
+    @apply mb-4;
+}
+
+.featured ul{
+    @apply mb-4 ml-6;
+}
+
+
+.map img{
+    @apply w-full rounded-xl;
+}
+
+.map h1{
+    @apply mb-1 text-3xl font-bold;
+}
+
+.map h2{
+    @apply mb-1 text-2xl font-bold;
+}
+
+.map h3{
+    @apply mb-1 text-lg font-bold;
+}
+
+.map p{
+    @apply mb-4;
+}
+
+.map ul{
+    @apply mb-4 ml-6;
+}
+
+.map ul{
+    @apply list-disc;
+}
