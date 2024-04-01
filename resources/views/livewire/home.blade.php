@@ -21,6 +21,7 @@
 
     <section class="w-full">
         <h1 class="text-5xl mb-2 text-center">Rust <span class="text-rust span">Custom Map</span> Features</h1>
+        <p class="mb-4 text-gray-700 text-center">Our maps are primarily designed with a focus on PvP, resulting in smaller <br> PvP-grade maps typically sized at 3450, 3750, 4000, 4250, and 6000 (roaming). <br> I personally prefer creating maps similar to 'Vital Rust' and 'WarBandits'</p>
         <div class="flex max-w-7xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
             <img src="{{ asset('assets/falt.webp') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:order-2 900:max-w-full" title="FPS+ Flat Terrain Map" alt="FPS+ Flat Terrain">
             <div class="w-full p-6 900:p-0 900:py-6 900:order-1">
@@ -37,18 +38,20 @@
                 <h2 class="text-4xl mb-3 text-black">Combined Outpost & Bandit Camp</h2>
                 <p class="mb-4 text-gray-700">The <a href="https://codefling.com/monuments/combined-outpost" class="text-rust underline font-bold" title="Our Merged Outpost and Bandit Camp Design" target="_blank" rel="nofollow">Outpost and Bandit Camp</a> have been combined into a single  have been merged into a unified entity, with the Outpost taking the lead as the primary location. This setup offers additional advantages such as teleportation and full support for the Monument addons plugin. Please consult the map description for all the details.</p>
                 <p class="mb-4 text-gray-700">We maintain the Outpost as the default entity, ensuring that everything within the Outpost remains unchanged. This approach facilitates the functionality of plugins such as NTeleportation and MonumentsFinder, allowing them to accurately locate monuments for configuring specific teleport points or entities.</p>
-                <p class="mb-4 text-gray-700">Our maps are primarily designed with a focus on PvP, resulting in smaller PvP-grade maps typically sized at 3450, 3750, 4000, 4250, and 6000 (roaming). I personally prefer creating maps similar to 'Vital Rust' and 'WarBandits'</p>
+                <p class="mb-4 text-gray-700">This outpost and bandit camp merge has Mission NPCs and vending machines. You may wonder about NPCs like weapons sellers; however, they have been replaced with vending machines. Additionally, you will find an AirWolf Vendor (an NPC who sells helicopters, etc.). These vending machines are spread across all outpost, so you will have to find them but all of them are available. I have not added any custom vending machines, so do not expect them.</p>
+                
             </div>
-            <img src="{{ asset('assets/outpost.webp') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:max-w-full" title="FPS+ Flat Terrain Map" alt="FPS+ Flat Terrain">
+            <img src="{{ asset('assets/outpost.webp') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:max-w-full" title="Our Merged Outpost and Bandit Camp Design" alt="Our Merged Outpost and Bandit Camp Design">
         </div>
 
         <div class="flex max-w-7xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
-            <img src="{{ asset('assets/map.png') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:order-2 900:max-w-full" title="FPS+ Flat Terrain Map" alt="FPS+ Flat Terrain">
+            <img src="{{ asset('assets/6000-size-fps-boosted-map.png') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:order-2 900:max-w-full" title="FPS+ Flat Terrain Map" alt="6000 Size FPS+ Boosted Map">
             <div class="w-full p-6 900:p-0 900:py-6 900:order-1">
                 <h2 class="text-4xl mb-3 text-black">Special Biome Pattern Rust Maps</h2>
                 <p class="mb-4 text-gray-700">We use a special biome pattern for our paid maps, aiming to include all four biome types: Arctic, Desert (Arid), Temperature (Long grass), and Tundra (Short grass). Free maps, on the other hand, do not come with a custom biome pattern due to the time it takes to create them. Free maps only feature the merged Outpost with Bandit Camp and more features. You can checkout our free maps collection <a href="{{ route('free') }}" class="underline text-rust font-bold">here</a></p>
                 <p class="mb-4 text-gray-700">We use all four biome designs to ensure that all biome-specific monuments spawn appropriately, such as the Arctic base in the snow biome, military base in the desert biome, etc. Using all four biomes ensures that we don't miss out on those monuments.</p>
-                <p class="text-gray-700">We try our best to divided the map into three biomes, primarily Arctic, Desert, and Temperature. The Temperature biome is mixed with Tundra.</p>
+                <p class="mb-4 text-gray-700">We try our best to divided the map into three biomes, primarily Arctic, Desert, and Temperature. The Temperature biome is mixed with Tundra.</p>
+                <p class="text-gray-700">The image you see depicts a map with a size of 6000. You can find many maps of this size without monuments in the arid or arctic biome. This is because such maps are designed with roaming areas without monuments.</p>
             </div>
         </div>
     </section>
@@ -79,10 +82,17 @@
                         </div>
                     </div>
     
-                    <div class="w-full p-6 rounded-lg bg-white border border-gray-200 h-fit">
+                    <div class="w-full p-6 rounded-lg bg-white border border-gray-200 h-fit mb-4">
                         <h3 class="text-xl">Do we recieve email in-case the map is updated? 🔔</h3>
                         <div class="py-2">
-                            <p class="text-gray-700 text-sm leading-7">No, not in the form of an email. Instead, when you visit the client area, you'll have the ability to filter the maps based on their most recent updates. This approach is more convenient. Sending out numerous emails could be counterproductive.</p>
+                            <p class="text-gray-700 text-sm leading-7">No, we don't send any emails except when you purchase a map and the confirmation email with the map download link. We respect your privacy.</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full p-6 rounded-lg bg-white border border-gray-200 h-fit">
+                        <h3 class="text-xl">Is there a download limit for the maps? 🤐</h3>
+                        <div class="py-2">
+                            <p class="text-gray-700 text-sm leading-7">Yes, there is a download limit for the map. You can purchase the map, but you can only download it 5 times. This limitation is due to bandwidth constraints. To regain access(with 5 limit), you have to repurchase the map.</p>
                         </div>
                     </div>
                 </div>
@@ -104,7 +114,7 @@
                     <div class="w-full p-6 rounded-lg bg-white border border-gray-200 h-fit mb-4">
                         <h3 class="text-xl">Is it possible to repurchase the same map? 🗺</h3>
                         <div class="py-2">
-                            <p class="text-gray-700 text-sm leading-7">Nope. Once a map is purchased, it becomes a permanent and unique registration on your account. If you have concerns regarding updates, rest assured. Maps will be updated in the event of any bugs or improvements. Your peace of mind is our priority.</p>
+                            <p class="text-gray-700 text-sm leading-7">Yes, you can repurchase a map with the same email again and again. We send you the download email through the email address provided. You can use a real or fake email if you want; just keep the download link safe for the future.</p>
                         </div>
                     </div>
                     <div class="w-full p-6 rounded-lg bg-white border border-gray-200 h-fit">
