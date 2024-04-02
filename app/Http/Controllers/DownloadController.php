@@ -35,7 +35,7 @@ class DownloadController extends Controller
         $map = FreeMap::where('slug', $slug)->first();
         if($map){
             $originalFilePath = Storage::disk('local')->path($map->file);
-            $newFileName = str_replace(' ', '-', strtolower($map->name)).'-'.'buyrustmaps-store-'.$map->size.'-'.rand(99, 9999999).'-'.date("d-m-y").'.zip';
+            $newFileName = str_replace(' ', '-', strtolower($map->name)).'buyrustmaps-store-free-'.$map->size.'-'.rand(99, 9999999).'-'.date("d-m-y").'.zip';
             $headers = [
                 'Content-Type' => 'application/zip',
                 'Content-Disposition' => 'attachment; filename="' . $newFileName . '"',

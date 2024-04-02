@@ -1,6 +1,6 @@
 <section class="w-full">
     <header class="w-full relative">
-        <div class="relative flex px-4 items-center justify-center h-[500px] bg-cover bg-center" style="background-image: url({{ asset('assets/turret.webp') }})">
+        <div class="relative flex px-4 items-center justify-center h-[600px] bg-cover bg-center bg-fixed" style="background-image: url({{ asset('assets/header.jpg') }})">
             <div class="bg-black/60 backdrop-blur-sm absolute top-0 left-0 w-full h-full"></div>
             <div class="relative z-10 text-white">
                 <h1 class="text-7xl text-center">Purchase High Quality <br> <span class="text-rust-green span"> FPS Boosted Custom RUST Maps</span> <br>Under - <span class="text-rust span">20US$</span></h1>
@@ -9,20 +9,24 @@
     </header>
     
     <div class="w-full">
-        <div class="max-w-7xl m-auto py-12 px-4">
-            <h1 class="text-4xl mb-3">Latest Rust Custom Maps</h1>
-            <div class="grid grid-cols-4 gap-6">
-                @foreach ($maps as $item)
-                    <x-item :$item />
-                @endforeach
-            </div>
+        <div class="max-w-6xl m-auto py-12 px-4">
+            @if (count($maps))
+                <h1 class="text-4xl mb-3">Latest Rust Custom Maps</h1>
+                <div class="grid grid-cols-4 gap-6">
+                    @foreach ($maps as $item)
+                        <x-item :$item />
+                    @endforeach
+                </div>
+            @else
+                <p class="text-center text-lg">No latest maps exist at the moment 🤔</p>
+            @endif
         </div>
     </div>
 
     <section class="w-full">
         <h1 class="text-5xl mb-2 text-center">Rust <span class="text-rust span">Custom Map</span> Features</h1>
         <p class="mb-4 text-gray-700 text-center">Our maps are primarily designed with a focus on PvP, resulting in smaller <br> PvP-grade maps typically sized at 3450, 3750, 4000, 4250, and 6000 (roaming). <br> I personally prefer creating maps similar to 'Vital Rust' and 'WarBandits'</p>
-        <div class="flex max-w-7xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
+        <div class="flex max-w-6xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
             <img src="{{ asset('assets/falt.webp') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:order-2 900:max-w-full" title="FPS+ Flat Terrain Map" alt="FPS+ Flat Terrain">
             <div class="w-full p-6 900:p-0 900:py-6 900:order-1">
                 <h2 class="text-4xl mb-3 text-black">What is FPS+ Rust Map?</h2>
@@ -33,7 +37,7 @@
             </div>
         </div>
 
-        <div class="flex max-w-7xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
+        <div class="flex max-w-6xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
             <div class="w-full py-6 pr-6 900:pr-0">
                 <h2 class="text-4xl mb-3 text-black">Combined Outpost & Bandit Camp</h2>
                 <p class="mb-4 text-gray-700">The <a href="https://codefling.com/monuments/combined-outpost" class="text-rust underline font-bold" title="Our Merged Outpost and Bandit Camp Design" target="_blank" rel="nofollow">Outpost and Bandit Camp</a> have been combined into a single  have been merged into a unified entity, with the Outpost taking the lead as the primary location. This setup offers additional advantages such as teleportation and full support for the Monument addons plugin. Please consult the map description for all the details.</p>
@@ -44,7 +48,7 @@
             <img src="{{ asset('assets/outpost.webp') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:max-w-full" title="Our Merged Outpost and Bandit Camp Design" alt="Our Merged Outpost and Bandit Camp Design">
         </div>
 
-        <div class="flex max-w-7xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
+        <div class="flex max-w-6xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
             <img src="{{ asset('assets/6000-size-fps-boosted-map.png') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:order-2 900:max-w-full" title="FPS+ Flat Terrain Map" alt="6000 Size FPS+ Boosted Map">
             <div class="w-full p-6 900:p-0 900:py-6 900:order-1">
                 <h2 class="text-4xl mb-3 text-black">Special Biome Pattern Rust Maps</h2>

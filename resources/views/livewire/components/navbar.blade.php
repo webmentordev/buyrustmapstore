@@ -1,5 +1,5 @@
-<nav class="sticky top-0 left-0 bg-white z-50 w-full">
-    <div class="max-w-7xl w-full mx-auto py-2 px-4 flex items-center justify-between">
+<nav class="sticky top-0 left-0 bg-white z-50 w-full border-b border-gray-200">
+    <div class="max-w-6xl w-full mx-auto py-2 px-4 flex items-center justify-between">
         <a href="{{ route('home') }}" wire:navigate><img src="{{ asset('assets/buy_rust_maps_logo.png')  }}" width="50" alt="Buy rust maps logo"></a>
         <ul class="flex items-center font-bold">
             <a class="ml-8" href="{{ route('home') }}" wire:navigate>Home</a>
