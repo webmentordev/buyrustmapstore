@@ -15,44 +15,11 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
             screens: {
-                "1040px": {
-                    "max": "1040px"
-                },
-                "1000": {
-                    "max": "1000px"
-                },
-                "945px": {
-                    "max": "945px"
-                },
-                "900": {
+                "900px": {
                     "max": "900px"
                 },
-                "760": {
-                    "max": "760px"
-                },
-                "710": {
-                    "max": "710px"
-                },
-                "700": {
-                    "max": "700px"
-                },
-                "690px": {
-                    "max": "690px"
-                },
-                "540": {
-                    "max": "540px"
-                },
-                "535px": {
-                    "max": "535px"
-                },
-                "520": {
-                    "max": "520px"
-                },
-                "430": {
-                    "max": "430px"
-                },
-                "430px": {
-                    "max": "430px"
+                "680px": {
+                    "max": "680px"
                 }
             },
             colors: {

@@ -26,9 +26,9 @@
     <section class="w-full">
         <h1 class="text-5xl mb-2 text-center">Rust <span class="text-rust span">Custom Map</span> Features</h1>
         <p class="mb-4 text-gray-700 text-center">Our maps are primarily designed with a focus on PvP, resulting in smaller <br> PvP-grade maps typically sized at 3450, 3750, 4000, 4250, and 6000 (roaming). <br> I personally prefer creating maps similar to 'Vital Rust' and 'WarBandits'</p>
-        <div class="flex max-w-6xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
-            <img src="{{ asset('assets/falt.webp') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:order-2 900:max-w-full" title="FPS+ Flat Terrain Map" alt="FPS+ Flat Terrain">
-            <div class="w-full p-6 900:p-0 900:py-6 900:order-1">
+        <div class="flex max-w-6xl m-auto py-[30px] rounded-lg px-4 900px:flex-col">
+            <img src="{{ asset('assets/falt.webp') }}" class="rounded-lg w-full h-fit max-w-[500px] 900px:order-2 900px:max-w-full" title="FPS+ Flat Terrain Map" alt="FPS+ Flat Terrain">
+            <div class="w-full p-6 900px:p-0 900px:py-6 900px:order-1">
                 <h2 class="text-4xl mb-3 text-black">What is FPS+ Rust Map?</h2>
                 <p class="mb-4 text-gray-700">In the FPS+ Rust Map, the terrain is flat and smooth, with unnecessary prefabs removed and fewer rock formations. This improvement is designed to enhance server performance and player FPS. For additional details, please refer to the map description.</p>
                 <p class="mb-4 text-gray-700">As visible in the image, there is no grass (tundra biome). We've utilized a special biome type to paint the terrain, resulting in shorter grass. This adjustment is aimed at enhancing player FPS in-game.</p>
@@ -37,20 +37,20 @@
             </div>
         </div>
 
-        <div class="flex max-w-6xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
-            <div class="w-full py-6 pr-6 900:pr-0">
+        <div class="flex max-w-6xl m-auto py-[30px] rounded-lg px-4 900px:flex-col">
+            <div class="w-full py-6 pr-6 900px:pr-0">
                 <h2 class="text-4xl mb-3 text-black">Combined Outpost & Bandit Camp</h2>
                 <p class="mb-4 text-gray-700">The <a href="https://codefling.com/monuments/combined-outpost" class="text-rust underline font-bold" title="Our Merged Outpost and Bandit Camp Design" target="_blank" rel="nofollow">Outpost and Bandit Camp</a> have been combined into a single  have been merged into a unified entity, with the Outpost taking the lead as the primary location. This setup offers additional advantages such as teleportation and full support for the Monument addons plugin. Please consult the map description for all the details.</p>
                 <p class="mb-4 text-gray-700">We maintain the Outpost as the default entity, ensuring that everything within the Outpost remains unchanged. This approach facilitates the functionality of plugins such as NTeleportation and MonumentsFinder, allowing them to accurately locate monuments for configuring specific teleport points or entities.</p>
                 <p class="mb-4 text-gray-700">This outpost and bandit camp merge has Mission NPCs and vending machines. You may wonder about NPCs like weapons sellers; however, they have been replaced with vending machines. Additionally, you will find an AirWolf Vendor (an NPC who sells helicopters, etc.). These vending machines are spread across all outpost, so you will have to find them but all of them are available. I have not added any custom vending machines, so do not expect them.</p>
                 
             </div>
-            <img src="{{ asset('assets/outpost.webp') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:max-w-full" title="Our Merged Outpost and Bandit Camp Design" alt="Our Merged Outpost and Bandit Camp Design">
+            <img src="{{ asset('assets/outpost.webp') }}" class="rounded-lg w-full h-fit max-w-[500px] 900px:max-w-full" title="Our Merged Outpost and Bandit Camp Design" alt="Our Merged Outpost and Bandit Camp Design">
         </div>
 
-        <div class="flex max-w-6xl m-auto py-[30px] rounded-lg px-4 900:flex-col">
-            <img src="{{ asset('assets/6000-size-fps-boosted-map.png') }}" class="rounded-lg w-full h-fit max-w-[500px] 900:order-2 900:max-w-full" title="FPS+ Flat Terrain Map" alt="6000 Size FPS+ Boosted Map">
-            <div class="w-full p-6 900:p-0 900:py-6 900:order-1">
+        <div class="flex max-w-6xl m-auto py-[30px] rounded-lg px-4 900px:flex-col">
+            <img src="{{ asset('assets/6000-size-fps-boosted-map.png') }}" class="rounded-lg w-full h-fit max-w-[500px] 900px:order-2 900px:max-w-full" title="FPS+ Flat Terrain Map" alt="6000 Size FPS+ Boosted Map">
+            <div class="w-full p-6 900px:p-0 900px:py-6 900px:order-1">
                 <h2 class="text-4xl mb-3 text-black">Special Biome Pattern Rust Maps</h2>
                 <p class="mb-4 text-gray-700">We use a special biome pattern for our paid maps, aiming to include all four biome types: Arctic, Desert (Arid), Temperature (Long grass), and Tundra (Short grass). Free maps, on the other hand, do not come with a custom biome pattern due to the time it takes to create them. Free maps only feature the merged Outpost with Bandit Camp and more features. You can checkout our free maps collection <a href="{{ route('free') }}" class="underline text-rust font-bold">here</a></p>
                 <p class="mb-4 text-gray-700">We use all four biome designs to ensure that all biome-specific monuments spawn appropriately, such as the Arctic base in the snow biome, military base in the desert biome, etc. Using all four biomes ensures that we don't miss out on those monuments.</p>
